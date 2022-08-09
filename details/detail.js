@@ -3,7 +3,7 @@ import { renderPetDetail } from '../render-utils.js';
 
 const petDetailContainer = document.getElementById('pet-detail-container');
 
-window.addEventListener('load', async() => {
+window.addEventListener('load', async () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
 
