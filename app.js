@@ -1,4 +1,5 @@
-
+import { getPets } from './fetch-utils.js';
+import { renderPetCard } from './render-utils.js';
 
 const petListContainer = document.getElementById('pet-list-container');
 
