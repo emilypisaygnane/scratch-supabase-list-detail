@@ -1,8 +1,16 @@
-// import functions and grab DOM elements
 
-// let state
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const petListContainer = document.getElementById('pet-list-container');
+
+// on load
+// fetch all dogs
+
+window.addEventListener('load', async() => {
+    const pets = await getPets();
+
+    for (let pet of pets) {
+        const petEl = renderPetCard(pet);
+
+        petListContainer.append(petEl);
+    } 
+});
