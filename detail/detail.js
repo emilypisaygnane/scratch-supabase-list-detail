@@ -3,7 +3,7 @@ import { renderPetDetail } from '../render-utils.js';
 
 const petDetailContainer = document.getElementById('pet-detail-container');
 
-window.addEventListener('load', async () => {
+async function loadData() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
 
@@ -11,4 +11,7 @@ window.addEventListener('load', async () => {
 
     const petDetailEl = renderPetDetail(pet);
     petDetailContainer.append(petDetailEl);
-});
+}
+
+loadData;
+

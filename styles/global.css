@@ -34,6 +34,11 @@ main {
     padding: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: black
+}
+
 h2 {
     font-size: 3rem;
     justify-content: center;
@@ -51,3 +56,6 @@ footer {
     background-color: var(--footer-background);
 }
 
+#pet-list-container {
+    display: flex;
+}
