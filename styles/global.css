@@ -61,12 +61,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .pet-card {
     font-size: 1.5rem;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     background-color: #efcccb;
     flex-direction: column;
