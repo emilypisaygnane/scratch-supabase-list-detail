@@ -13,5 +13,5 @@ async function loadData() {
     petDetailContainer.append(petDetailEl);
 }
 
-loadData;
+loadData();
 
