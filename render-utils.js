@@ -7,7 +7,7 @@ export function renderPetCard(pet) {
     div.classList.add('pet-card');
 
     p.textContent = pet.name;
-    img.src = `./assets`;
+    img.src = `./assets/${pet.breed}.png`;
     a.href = `./detail/?id=${pet.id}`;
 
     div.append(p, img);
@@ -48,7 +48,7 @@ export function renderPetDetail(pet) {
 
     ageAndBreedEl.append(ageEl, breedEl);
 
-    img.src = `../assets/`;
+    img.src = `../assets/${pet.breed}.png`;
 
     div.append(nameEl, img, speciesEl, ageAndBreedEl, descriptionEl);
 

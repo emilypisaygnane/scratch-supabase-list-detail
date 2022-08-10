@@ -3,10 +3,7 @@ import { renderPetCard } from './render-utils.js';
 
 const petListContainer = document.getElementById('pet-list-container');
 
-// on load
-// fetch all dogs
-
-window.addEventListener('load', async() => {
+window.addEventListener('load', async () => {
     const pets = await getPets();
 
     for (let pet of pets) {
